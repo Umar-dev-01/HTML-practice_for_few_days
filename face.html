@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>simple page</title>
+  <meta charset="UTF-8">
+  <title>Simple Page of HTML with CSS</title>
+  <style>
+    /* element selector */
+    body {
+      background-color:lightblue;
+    }
+
+    /* id selector */
+    #heading {
+      color:yellow;
+      text-align:center;
+    }
+
+    /* class selector */
+    .para {
+      color:green;
+      font-size:18px;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Headings and paragraph -->
-  <h1>Main Heading</h1>
-  <p>This is a sample paragraph</p>
+  <h1 id="heading">Main Heading</h1>
+  <p class="para">This is a sample paragraph</p>
 
   <!-- Text formatting and quotations -->
   <p><strong>Bold text</strong> and <em>italic text</em></p>
   <blockquote>This is a quoted text</blockquote>
 
   <!-- Link -->
-  <p>Visit our site <a href="https://www.dev.com">develper Site</a>.</p>
+  <p>Visit our site <a href="https://www.dev.com">Developer Site</a>.</p>
 
-  <!-- Image -->
-  <img src="https://via.pm.com" alt="PM_pak">
+  <!-- Image  -->
+  <img src="https://via.placeholder.com/150" alt="Sample Image">
 
   <!-- List -->
   <h2>My Shopping List</h2>
@@ -29,22 +48,22 @@
 
   <!-- Table -->
   <h2>User Info Table</h2>
-  <table border="1">
+  <table border="1" cellpadding="5">
     <tr>
-      <th>Name</th>
-      <th>Age</th>
+    <th>Name</th>
+    <th>Age</th>
     </tr>
     <tr>
-      <td>Umar</td>
-      <td>21</td>
+    <td>Umar</td>
+    <td>21</td>
     </tr>
     <tr>
-      <td>Sana</td>
-      <td>20</td>
+     <td>Sana</td>
+    <td>20</td>
     </tr>
   </table>
 
-  <!-- Block vs inline -->
+  <!-- Div Block and span -->
   <div>This is example of div block</div>
   <p>This is a <span style="color: blue;">span inline</span> element</p>
 
@@ -57,19 +76,18 @@
   </iframe>
 
   <!-- HTML Form -->
+  <h2>Form Example</h2>
   <form action="/submit" method="post">
 
     <!-- HTML Form Elements -->
     <label>Name:</label>
-    <input type="text" name="username"><br>
-    <br>
+    <input type="text" name="username"><br><br>
+
     <label>Email:</label>
-    <input type="email" name="email"><br>
-    <br>
+    <input type="email" name="email"><br><br>
 
     <!-- HTML Input Attributes -->
-    <input type="password" name="pass" placeholder="Enter password" required><br>
-    <br>
+    <input type="password" name="pass" placeholder="Enter password" required><br><br>
     <input type="submit" value="Submit">
   </form>
 
