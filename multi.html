@@ -1,72 +1,86 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-  <title>practice</title>
+  <title>My Simple Portfolio</title>
   <style>
-    body {
-      background-color: lightyellow;
+    body{
+      margin:0;
+      padding:0;
+      line-height:1.6;
     }
-    h1{
-      color:darkblue;
-    }
-    p{
-      color:green;
-    }
-  </style>
-</head><!DOCTYPE html>
-<head>
-  <title>My Profile Card</title>
-  <style>
-    body {
-    background-color: #f2f2f2;
-    }
-  .card{
-      width:280px;
-      background:white;
-      border-radius:20px;
-      margin: 55px auto;
-      text-align:center;
-      padding:30px;
-    }
-.card img{
-      width: 130px;
-      border-radius:60%;
-    }
-.card h1 {
-      font-size:30px;
-      margin:15px 0;
-    }
- .card p{
-      color:gray;
-      font-size:20px;
-    }
-.card ul li{
-      margin:15px 0;
-    }
-.card a{
-      margin-top:10px;
-      background:#0077ff;
+
+    header{
       color:white;
-      padding:8px 16px;
+      text-align:center;
+      padding:40px;
+    }
+ nav{
+      background:#333;
+      text-align:center;
+    }
+    nav a{
+      color:white;
+      text-decoration:none;
+      padding:20px 30px;
+      display:inline-block;
+    section{
+      padding:30px;
+      text-align:center;
+    }
+    h2 {
+      color:#4facfe;
+      margin-bottom:20px;
+    }
+.project {
+      display:inline-block;
+      background: #f4f4f4;
+      margin:10px;
+      padding:25px;
+      width:200px;
+      border-radius:8px;
+    }
+    button{
+      background:#4facfe;
+      color:white;
+      padding:10px 15px;
+      border:none;
       border-radius:10px;
     }
- .card a:hover{
-    background:#005bb5;
+    button:hover{
+      background: #00c6ff;
+    }
+
+    footer{
+      background:#333;
+      color:white;
+      text-align:center;
+      padding:15px;
     }
   </style>
 </head>
 <body>
-<div class="card">
-    <img src="https://via.placeholder.com/120" alt="Profile Picture">
-    <h1>Muhammad Umar</h1>
-    <p>IT Student | Web Learner</p>
-    <h2>My Skills</h2>
-    <ul>
-      <li>HTML & CSS</li>
-      <li>C++ Basics</li>
-      <li>JavaScript Beginner</li>
-    </ul>
-    <a href="https://github.com/Umar-dev-01" target="_blank">My GitHub</a>
-  </div>
+<header>
+    <h1>My Portfolio</h1>
+    <p>Practice Project using HTML & CSS</p>
+  </header>
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+ <section id="about">
+    <h2>About Me</h2>
+    <p>I am learning HTML, CSS and JavaScript. This webpage is made with CSS concepts I studied from W3Schools.</p>
+  </section>
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">CAlculator</div>
+    <div class="project">DLD project</div>
+    <div class="project">Bookstore Database</div>
+  </section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <button>Say Hello</button>
+  </section>
 </body>
 </html>
