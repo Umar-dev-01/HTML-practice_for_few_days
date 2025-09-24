@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
   <title>Profile Card</title>
   <style>
     body{
@@ -40,30 +42,27 @@
       border-radius:8px;
       cursor:pointer;
       font-weight:bold;
+      text-decoration:none;   /* remove underline */
+      text-align:center;
+      display:inline-block;
     }
 
-    .linkedin{ 
-background:#bfbfbf;
- }
-    .github{ 
-background:#f5ff9d;
- }
-    .email{
- background:#c7c7ff;
- }
-    .instagram{ 
-background:#ffc7c7;
- }
+    .linkedin{ background:#bfbfbf; color:#000; }
+    .github{ background:#f5ff9d; color:#000; }
+    .email{ background:#c7c7ff; color:#000; }
+    .instagram{ background:#ffc7c7; color:#000; }
+
   </style>
 </head>
 <body>
   <div class="card">
     <img src="my-image.jpg" alt="Profile">
     <h2>M. Umar</h2>
-    <button class="btn linkedin">LinkedIn</button>
-    <button class="btn github">GitHub</button>
-    <button class="btn email">Email</button>
-    <button class="btn instagram">Instagram</button>
+
+    <a href="https://www.linkedin.com/in/umar-it/" target="_blank" class="btn linkedin">LinkedIn</a>
+    <a href="https://github.com/Umar-dev-01" target="_blank" class="btn github">GitHub</a>
+    <a href="mailto:01.dev.umar@gmail.com" target="_blank" class="btn email">Email</a>
+    <a href="https://www.instagram.com/umar_awan08/" target="_blank" class="btn instagram">Instagram</a>
   </div>
 </body>
 </html>
