@@ -1,47 +1,81 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
   <title>Profile Card</title>
-  <html>
-<body>
-    <style>
-   .btn{
+  <style>
+    body {
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #1e1e1e;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: #2e2e2e;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      width: 250px;
     
-   } 
-    
+    }
 
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
 
+    .card h2 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
 
+    /* Common button style */
+    a {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+    }
 
-    .linkedin{ 
-background:#bfbfbf;
- }
-    .github{ 
-background:#f5ff9d;
- }
-    .email{
- background:#c7c7ff;
- }
-    .instagram{ 
-background:#ffc7c7;
- }
-  
-  
-  
-  
-  
-  
-  
+    /* Separate colors for each */
+    .linkedin {
+      background: #bfbfbf;
+    }
+
+    .github {
+      background: #f5ff9d;
+    }
+
+    .email {
+      background: #c7c7ff;
+    }
+
+    .instagram {
+      background: #ffc7c7;
+    }
   </style>
+</head>
+<body>
   <div class="card">
+    <img src="my-own.png" alt="Profile">
     <h2>M. Umar</h2>
-    <button type="button">LinkedIn</button>
-    <button type="button">GitHub</button>
-    <button type="button">Email</button>
-    <button type="button">Instagram</button>
+
+    <!-- Buttons as links -->
+    <a class="linkedin" href="https://www.linkedin.com/in/umar-it/" target="_blank">LinkedIn</a>
+    <a class="github" href="https://github.com/Umar-dev-01" target="_blank">GitHub</a>
+    <a class="email" href="mailto:your-email@example.com">Email</a>
+    <a class="instagram" href="https://www.instagram.com/" target="_blank">Instagram</a>
   </div>
 </body>
 </html>
-  
-
-
-
-
