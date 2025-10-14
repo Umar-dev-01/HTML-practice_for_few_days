@@ -1,44 +1,98 @@
+
 <!DOCTYPE html>
 <head>
-  <title>CV of CTV</title>
+ 
+  <title>CTO CV</title>
   <style>
+    body {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family:  sans-serif;
+    }
+
     .card {
+      display: flex;
+      align-items: center;
       background-color: #7b7b7b;
       color: white;
-      display: flex;
-      gap: 20px;
-      padding: 15px;
-      border-radius: 10px;
+      border-radius: 20px;
+      padding: 30px 40px;
+      width: 850px;
+      gap: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .card img {
-      border-radius: 10px; 
+      height: 250px;
+      width: 220px;
+      border-radius: 20px;
+      object-fit: cover;
     }
 
-    .icons img {
-      height: 28px;
+    .info h1 {
+      font-size: 28px;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .info h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 5px;
+      color: #e0e0e0;
+    }
+
+    .info p {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-top: 15px;
+      max-width: 500px;
+      color: #f2f2f2;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+      background-color: black;
+      border-radius: 8px;
+      padding: 5px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <img src="my-own.png" height="210px" width="170px">
+    <img src="my-own.png">
 
     <div class="info">
       <h1>M.Umar</h1>
       <h3>CTO @Reddot</h3>
       <p>
-        Muhammad Umar is the Leading AI expert leading the AI innovation at Reddot.
-        His contribution to the community is undoubtedly amazing.
+        Muhammad Umar is the leading AI expert spearheading innovation at Reddot. 
+        His contributions to the community are undoubtedly amazing.
       </p>
+
       <div class="social-icons">
-        <img src="linkdine.png" height="20px" width="40px">
-        <img src="insta.png" height="20px" width="40px">
-        <img src="twitter.png" height="20px" width="40px">
+        <img src="linkdine.png" alt="LinkedIn">
+        <img src="insta.png" alt="Instagram">
+        <img src="twitter.png" alt="Twitter">
       </div>
     </div>
   </div>
- 
+
 </body>
 </html>
