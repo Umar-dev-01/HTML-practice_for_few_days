@@ -1,36 +1,106 @@
 <!DOCTYPE html>
 <head>
-    <title>Chizous Menu</title>
-    <div>
-    <style>
-    img{
-border-radius:20px;
+  <title>Cheeziuos Menu</title>
+  <style>
+    body {
+      font-family:  sans-serif;
+      background: #f4e6d7;
+      text-align: center;
     }
-    </style>
+    h1 { 
+        font-size: 48px;   
+    }
+    .cards {
+         display: flex;
+          justify-content:
+           center; gap: 30px;
+         }
+    .card {
+      background: #ffffff;
+      width: 300px;
+    }
+    .card img { 
+        width: 100%;
+         height: 200px;
+          object-fit: cover; 
+          border-radius: 20px;
+         }
+   
+    .card p { 
+        font-size: 14px;  
+    }
+    .price-row {
+        display: flex;
+        justify-content: center;
+            gap: 10px; 
+              }
+    .price {
+         font-size: 30px; 
+         font-weight: bold; 
+         color: #d35400; 
+        }
+    .tag {
+      background: #ff7f32;
+       color: #fff; 
+       padding: 6px 14px;
+      border-radius: 15px;
+    }
+    .btn {
+      margin-top: 15px; 
+       
+      padding: 12px;
+       background: #ffffff;
+      font-weight: bold; 
+      cursor: pointer;
+    }
+    .btn:hover {
+         background: #000;
+          color: #fff;
+        }
+  </style>
 </head>
+
+
+
+
 <body>
-    <img src="beef_peproni.png">
-    <h1>Beef Pepporoni</h1>
-    <p>A crispy thin crust toppped with beef pepperoni, mozzarella cheese, and rich mari...</p>
-</div>
+  <h1>Cheeziuos Menu</h1>
+  <div class="cards">
+    <div class="card">
+      <img src="beef_peproni.png">
+      <h2>Beef Pepperoni</h2>
+      <p>A crispy thin crust topped with beef pepperoni, mozzarella cheese, and rich mari...</p>
+      <div class="price-row">
+        <div class="price">Rs.1550</div>
+        <div class="tag">Starting Price</div>
+      </div>
+      <div class="btn">+ ADD TO CART</div>
+    </div>
 
 
+    <div class="card">
+      <img src="chiken.extream.png">
+      <h2>Chicken Extreme</h2>
+      <p>A crispy thin crust topped with beef pepperoni, mozzarella cheese, and rich mari...</p>
+      <div class="price-row">
+        <div class="price">Rs.2000</div>
+        <div class="tag">Starting Price</div>
+      </div>
+      <div class="btn">+ ADD TO CART</div>
+    </div>
 
 
+    <div class="card">
+      <img src="crust dope.png">
+      <h2>Crust Dope</h2>
+      <p>A crispy thin crust topped with beef pepperoni, mozzarella cheese, and rich mari...</p>
+      <div class="price-row">
+        <div class="price">Rs.3660</div>
+        <div class="tag">Starting Price</div>
+      </div>
 
-<div>
-    <img src="chiken.extream.png">
-    <h1>Chicken extream</h1>
-    <p>A crispy thin crust topped with topped with chicken, mozzarella cheese, and rich marinara sauce.</p> 
-</div>
-
-
-
-
-
-<div>
-    <img src="crust dope.png">
-    <h1>Crust Dope</h1>
-    <p>A crispy thin crust topped with beef pepperoni, mozzarella cheese, and rich mari...</p>
-</div>
+      <div class="btn">+ ADD TO CART</div>
+    </div>
+  </div>
 </body>
+</html>
