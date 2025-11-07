@@ -5,40 +5,76 @@
     </head>
     <body>
 <style>
-    .card div{
-       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    .card {
        height: 100%;
        width: 100%;
        display: flex;
        gap:20px;
        justify-content:center ;
-    }
-.card img{
+         border-radius: 10px;
+   }
+
+
+.card2{
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+}
+.card3{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;  
+}
+.picCard{
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 </style>
 
 
 <div class="card">
-        <div>
-            <div class="card img">
+ <div class="picCard">         
 <img src="soian.png">
-</div>
 <h2>Title 1</h2>
+</div>
 
-<div>
+<div class="picCard">
 <img src="black.png">
 <h2>Title 2</h2>
 </div>
-<div>
+
+    <div class="picCard">
 <img src="uni.png">
 <h2>Long Title 3: forcing a multi line</h2>
 </div>
-<div>
+
+    <div class="picCard">
 <img src="laptop.png">
 <h2>Title 4</h2>
 </div>
 </div>
-</div>
+
+
+
+<div class="card2">
+<h3>Notes</h3>
+<p>This is a simple demo of using subgrids for cards,
+     this highlights how we can overcome the issues of
+      having objectives of multipule sizes, and aliging 
+them, along with the adjoing cards. In this case the
+ images are of differnt widths and heights, and to also throw 
+in 1 card header this overflows a singale line.<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid">Subgrid</a>
+ is making this rather simpler to implement</p>
+ </div>
+
+<div class="card3">
+ <img src="phol.png">
+
+ <img src="pull.png">
+
+ <img src="pani.png">
+
+ <img src="kala.png">
+ </div>
     </body>
+    
 </html>
