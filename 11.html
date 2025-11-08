@@ -12,20 +12,34 @@
        gap:20px;
        justify-content:center ;
          border-radius: 10px;
-   }
+        margin-bottom: 40px;
 
+        
+   }
 
 .card2{
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       border-radius: 10px;
+       padding: 20px;
 }
 .card3{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;  
+    border-radius: 10px; 
+   display: flex;
+   justify-content: center;
+   gap: 20px;
 }
 .picCard{
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    width: 220px;
+    height:250px ;
+    text-align: center;
+    gap: 20px;
+     width: 100%;
+}
+.picCard:hover{
+ box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 </style>
 
@@ -66,15 +80,25 @@ in 1 card header this overflows a singale line.<br>
  is making this rather simpler to implement</p>
  </div>
 
-<div class="card3">
- <img src="phol.png">
+<div class="card">
+ <div class="picCard">         
+<img src="phol.png">
+<h2>Title 5</h2>
+</div>
+<div class="picCard">
+<img src="pull.png">
+<h2>Title 6</h2>
+</div>
+<div class="picCard">
+<img src="pani.png">
+<h2>Title 7</h2>
+</div>
 
- <img src="pull.png">
-
- <img src="pani.png">
-
- <img src="kala.png">
- </div>
+<div class="picCard">
+<img src="kala.png">
+<h2>Title 8</h2>
+</div>
+</div>
     </body>
     
 </html>
