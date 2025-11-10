@@ -4,6 +4,13 @@
     <title>MY PORTFOLIO</title>
     <body>
         <style>
+            body{
+                justify-items: center;
+                margin-left: 200px;
+                margin-right: 200px;
+                font-family: Arial;
+                padding: 50px;
+            }
             .pic{
      border-radius: 50%;
     height: 120px;
@@ -16,14 +23,16 @@
 .card1{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .card2{
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-     width: 150px;
-     border-radius: 10px;
-
+     border: 1px solid #ccc;
+     width: 170px;
+     border-radius: 5px;
+     text-align: center;
+     padding: 10px;
+     margin-left: 17px;
 }
 .pora{
     display: flex;
@@ -45,49 +54,66 @@
     justify-content: center;
     display: flex;
     gap: 20px;
+    border: 1px solid #ccc;
+}
+.sendButton{
+     background-color: rgb(67, 67, 246);
+   color: white;
+   border: none;
+   cursor: pointer;
+   padding: 10px 15px;
+   border-radius: 3px;
+   margin-bottom: 30px;
+}
+input[type=email]{
+    width: 500px;
+    height: 30px;
+    margin-left: 17px;
 }
         </style>
         <div class="card1">
   <div class="cardProt">
-<p>MY PORTFOLIO</p>
-<p>ABOUT</p>
-<p>PROJECTS</p>
-<p>SKILLS</p>
-<p>CONTACT</p>
+<h3>MY PORTFOLIO</h3>
+<p><b>ABOUT</b></p>
+<p><b>PROJECTS</b></p>
+<p><b>SKILLS</b></p>
+<p><b>CONTACT</b></p>
 </div>
 
 
-       <h1>ABOUT ME</h1>
+       <h2>ABOUT ME</h2>
        <div class="line1">
        <img src="umr.jpeg" class="pic">
        <p>Lorem ipsum dolor sit amet, consectetur adipisicce eliti. Phasellus vitae liqaul eget dolor varius gravida. Praesent consequat orci ut sapien pellentesque aliquam.</p>
     </div>
 
-    <h1>PROJECTS</h1>
+    <h2>PROJECTS</h2>
     <div class="div">
     <div class="pora">
     <div class="card2">
-    <h1>Project Title</h1>
+    <h3>Project Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae ligula eget dolor varius gravida. Praesent consequat orci ut sapien pellentesque aliquam.</p>
 <button class="button">VIEW PROJECT</button>
 </div>
 
 
  <div class="card2">
-    <h1>Project Title</h1>
+    <h3>Project Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae ligula eget dolor varius gravida. Praesent consequat orci ut sapien pellentesque aliquam.</p>
 <button class="button">VIEW PROJECT</button>
 </div>
 
 <div class="card2">
-    <h1>Project Title</h1>
+    <h3>Project Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae ligula eget dolor varius gravida. Praesent consequat orci ut sapien pellentesque aliquam.</p>
 <button class="button">VIEW PROJECT</button>
 </div>
 </div>
 
-<h1>SKILLS</h1>
-
+<h2>CONTACT</h2>
+<input type="email" placeholder="Yhan dalo gmail">
+<button class="sendButton">Send</button>
+</div>
 </div>
  </div>
 </body>
