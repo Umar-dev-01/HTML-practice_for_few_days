@@ -8,15 +8,22 @@
      border-radius: 50%;
     height: 120px;
     width: 100px;
-            }
+    }
 .line1{
     display: flex;
     gap:40px;
+}
+.card1{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .card2{
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
      width: 150px;
      border-radius: 10px;
+
 }
 .pora{
     display: flex;
@@ -31,7 +38,25 @@
     cursor: pointer;
     width: 150px;
 }
+.button:hover{
+       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.cardProt{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
         </style>
+        <div class="card1">
+  <div class="cardProt">
+<p>MY PORTFOLIO</p>
+<p>ABOUT</p>
+<p>PROJECTS</p>
+<p>SKILLS</p>
+<p>CONTACT</p>
+</div>
+
+
        <h1>ABOUT ME</h1>
        <div class="line1">
        <img src="umr.jpeg" class="pic">
@@ -39,12 +64,14 @@
     </div>
 
     <h1>PROJECTS</h1>
+    <div class="div">
     <div class="pora">
     <div class="card2">
     <h1>Project Title</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae ligula eget dolor varius gravida. Praesent consequat orci ut sapien pellentesque aliquam.</p>
 <button class="button">VIEW PROJECT</button>
 </div>
+
 
  <div class="card2">
     <h1>Project Title</h1>
@@ -58,7 +85,11 @@
 <button class="button">VIEW PROJECT</button>
 </div>
 </div>
+
 <h1>SKILLS</h1>
+
+</div>
+ </div>
 </body>
 </head>
 </html>
