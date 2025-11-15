@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Search Engine</title>
+    <title>Google</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
     <style>
@@ -67,9 +67,10 @@ margin-bottom: 70px;
         }
         .blackboxcontent{
            display: flex;
-            gap: 25px;
             cursor: pointer;
             background-color: black;
+            justify-content: space-between;
+             padding: 10px 30px;
             
         }
         .blackboxcontent a{
@@ -97,7 +98,30 @@ background-color: #202124;
  background-color: #525357;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
  }
-.leftLink
+.leftLink{
+display: flex;
+gap: 20px;
+justify-content: left;
+}
+.rightLink{
+display: flex;
+gap: 20px;
+}
+.ai{
+    display: flex;
+gap: 3px;
+width: 150px;
+height: 40px;
+border-radius: 30px;
+justify-items: center;
+}
+.ai:hover{
+box-shadow:  0 0 6px rgba(66,133,244,0.8),  
+        0 0 10px rgba(234,67,53,0.8),   
+        0 0 14px rgba(251,188,5,0.8),  
+        0 0 18px rgba(52,168,83,0.8);
+}
+
     </style>
 </head>
 <body>
@@ -114,11 +138,16 @@ background-color: #202124;
 
     <div class="bar">
 <i class="fa-solid fa-magnifying-glass"></i>
-<input type="search" class="searchBar">
+<input type="search" class="searchBar" style="color: white;">
 <i class="fa-solid fa-microphone"></i>
 <i class="fa-solid fa-camera"></i>
-</div>
 
+<div class="ai">
+<i class="fa-brands fa-searchengin"></i>
+<p>AI</p> 
+<p>Mode</p> 
+</div>
+</div>
     
 
     <div class="buttons">
@@ -139,15 +168,18 @@ background-color: #202124;
 
 
     <div class="blackboxcontent">
+        <div class="leftLink">
         <p><a href="https://about.google/?utm_source=google-PK&utm_medium=referral&utm_campaign=hp-footer&fg=1" target="_blank">About</a></p>
         <p> <a href="https://business.google.com/en-all/google-ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" target="_blank">Advertising</a></p>
         <p><a href="https://business.google.com/en-all/business-profile/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" target="_blank">Business</a></p>
         <p><a href="https://www.google.com/search/howsearchworks/?fg=1" target="_blank"> Search works</a></p>
-     <p><a href="https://policies.google.com/privacy?hl=en-PK&fg=1" target="_blank">Privacy</a></p>
+</div>
+<div class="rightLink">
+        <p><a href="https://policies.google.com/privacy?hl=en-PK&fg=1" target="_blank">Privacy</a></p>
         <p><a href="https://policies.google.com/terms?hl=en-PK&fg=1" target="_blank">Terms</a></p>
         <p><a href="google.com/preferences?hl=en-PK&fg=1" target="_blank">Settings</a></p>
     </div>
     </div>
-   
+   </div>
 </body>
 </html>
