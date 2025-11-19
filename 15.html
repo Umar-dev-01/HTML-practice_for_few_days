@@ -3,16 +3,16 @@
 <head>
     <title>Google</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+
     <style>
-         i{
-  font-size: 20px; 
-  color: gray;  
- cursor: pointer;
-         }
-.bar i{
-    margin: 0 12px;
-}
+        i{
+            font-size: 20px;
+            color: gray;
+            cursor: pointer;
+        }
+        .bar i{
+            margin: 0 12px;
+        }
         body{
             background-color: #1E1E1E;
             font-family: 'Roboto', Arial, sans-serif;
@@ -23,28 +23,42 @@
             display: flex;
             justify-content: flex-end;
             gap: 15px;
+            margin: 10px 20px;
         }
         .p{
-            text-align: center;
             font-size: 80px;
             margin-bottom: 40px;
         }
         .bar{
-            display: flex; 
-             align-items: center;
+            display: flex;
+            align-items: center;
             justify-content: space-between;
             width: 700px;
             height: 50px;
             background-color: #4a4f56;
             border-radius: 30px;
             margin: 0 auto 40px auto;
+            padding: 0 20px;
+        }
+        .searchBar{
+            width: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            color: white;
+            padding-left: 15px;
+        }
+        .bar:hover{
+            background-color: #525357;
+            box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
         }
         .buttons{
             display: flex;
             justify-content: center;
             gap: 15px;
         }
- .button2{
+        .button2{
             border-radius: 5px;
             background-color: #303134;
             height: 40px;
@@ -56,131 +70,109 @@
         }
         .button2:hover{
             background-color: #3C4043;
-            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
         }
         .sindi{
-margin-top: 43px;
-margin-bottom: 70px;
+            margin-top: 43px;
+            margin-bottom: 70px;
         }
         a{
             text-decoration: none;
+            color: lightblue;
+        }
+        .blackboxeffect{
+            background-color: #202124;
+        }
+        .pak{
+            color: whitesmoke;
+            text-align: left;
+            padding: 1px 30px;
+            background-color: black;
+            border-bottom: 1px solid #3c4043;
         }
         .blackboxcontent{
-           display: flex;
-            cursor: pointer;
+            display: flex;
             background-color: black;
             justify-content: space-between;
-             padding: 10px 30px;
-            
+            padding: 10px 30px;
         }
-        .blackboxcontent a{
-            color: whitesmoke;
+        .leftLink, .rightLink{
+            display: flex;
+            gap: 20px;
         }
-   .blackboxeffect{
-background-color: #202124;
+        .ai{
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            padding: 0 10px;
+            border-radius: 30px;
+            height: 40px;
         }
-.pak{
-    color: whitesmoke;
-   text-align: left;
-   padding: 1px 30px;
-   background-color: black;
-     border-bottom: 1px solid #3c4043;
-}
- .searchBar{
- width: 85%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    padding-left: 15px;
- }
- .bar:hover{
- background-color: #525357;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
- }
-.leftLink{
-display: flex;
-gap: 20px;
-justify-content: left;
-}
-.rightLink{
-display: flex;
-gap: 20px;
-}
-.ai{
-    display: flex;
-gap: 3px;
-width: 150px;
-height: 40px;
-border-radius: 30px;
-}
-.ai:hover{
-box-shadow:  0 0 6px rgba(66,133,244,0.8),  
-        0 0 10px rgba(234,67,53,0.8),   
-        0 0 14px rgba(251,188,5,0.8),  
-        0 0 18px rgba(52,168,83,0.8);
-}
-
+        .ai:hover{
+            box-shadow: 0 0 6px rgba(66,133,244,0.8),
+                        0 0 10px rgba(234,67,53,0.8),
+                        0 0 14px rgba(251,188,5,0.8),
+                        0 0 18px rgba(52,168,83,0.8);
+        }
+        a{
+            color: white;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="iconline">
-        <p><a href="https://mail.google.com/mail/u/0/?ogbl#inbox" style="color: white;">Gmail</a></p>
-        <p><a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl" style="color: white;">Images</a></p>
+        <p><a href="https://mail.google.com/">Gmail</a></p>
+        <p><a href="https://www.google.com/imghp">Images</a></p>
         <p><i class="fa-solid fa-table-cells"></i></p>
         <p><i class="fa-solid fa-circle-user"></i></p>
-
     </div>
-
 
     <div class="p">Google</div>
 
-
     <div class="bar">
-<i class="fa-solid fa-magnifying-glass"></i>
-<input type="search" class="searchBar" style="color: white;">
-<i class="fa-solid fa-microphone"></i>
-<i class="fa-solid fa-camera"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" class="searchBar">
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-camera"></i>
 
-<div class="ai">
-<i class="fa-brands fa-searchengin"></i>
-<p>AI</p> 
-<p>Mode</p> 
-</div>
-</div>
-    
+        <div class="ai">
+            <i class="fa-brands fa-searchengin"></i>
+            <p>AI</p>
+            <p>Mode</p>
+        </div>
+    </div>
 
     <div class="buttons">
         <div class="button2"><p>Google Search</p></div>
-        <div class="button2">
-    <p><a href="https://doodles.google/" style="color: white;">I'm Feeling Lucky</a></p></div>
+        <div class="button2"><p><a style="color:white;" href="https://doodles.google/">I'm Feeling Lucky</a></p></div>
     </div>
 
     <div class="sindi">
-        <p>Google offered in:<a href="*" style="color: lightblue;"> اردو پښتو سنڌي</p>
+        <p>Google offered in: <a>اردو</a> <a>پښتو</a> <a>سنڌي</a></p>
     </div>
-
 
     <div class="blackboxeffect">
-    <div class="pak">
-    <p>Pakistan</p>
-</div>
+        <div class="pak">
+            <p>Pakistan</p>
+        </div>
 
+        <div class="blackboxcontent">
+            <div class="leftLink">
+                <p><a href="https://about.google/" target="_blank">About</a></p>
+                <p><a href="https://ads.google.com/" target="_blank">Advertising</a></p>
+                <p><a href="https://business.google.com/" target="_blank">Business</a></p>
+                <p><a href="https://www.google.com/search/howsearchworks/" target="_blank">Search works</a></p>
+            </div>
 
-    <div class="blackboxcontent">
-        <div class="leftLink">
-        <p><a href="https://about.google/?utm_source=google-PK&utm_medium=referral&utm_campaign=hp-footer&fg=1" target="_blank">About</a></p>
-        <p> <a href="https://business.google.com/en-all/google-ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" target="_blank">Advertising</a></p>
-        <p><a href="https://business.google.com/en-all/business-profile/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" target="_blank">Business</a></p>
-        <p><a href="https://www.google.com/search/howsearchworks/?fg=1" target="_blank"> Search works</a></p>
-</div>
-<div class="rightLink">
-        <p><a href="https://policies.google.com/privacy?hl=en-PK&fg=1" target="_blank">Privacy</a></p>
-        <p><a href="https://policies.google.com/terms?hl=en-PK&fg=1" target="_blank">Terms</a></p>
-        <p><a href="google.com/preferences?hl=en-PK&fg=1" target="_blank">Settings</a></p>
+            <div class="rightLink">
+                <p><a href="https://policies.google.com/privacy" target="_blank">Privacy</a></p>
+                <p><a href="https://policies.google.com/terms" target="_blank">Terms</a></p>
+                <p><a href="https://www.google.com/preferences" target="_blank">Settings</a></p>
+            </div>
+        </div>
     </div>
-    </div>
-   </div>
+
 </body>
 </html>
