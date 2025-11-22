@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<title>Web page</title>
-    </head>
-    <body>
+<head>
+<title>Two Cards</title>
 <style>
     body{
-  background-color: black;
-   display: flex;
- justify-content: center;
-  margin-left: 50px;
-height: 100vh;
-flex-direction: column;
-color: white;
-font-family: arial, sans-serif;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        flex-direction: row;      
+        height: 100vh;
+        font-family: arial, sans-serif;                
+        margin: 0;                
     }
-    .signIn{
-color: blue;
-height: 40px;
+    .card1{
+        background-color: #111;
+        width: 550px;
+        padding: 25px;             
+        border-radius: 15px;      
+        color: white;
     }
     .bar{
         color: gray;
@@ -25,14 +26,60 @@ height: 40px;
         width: 500px;
         background-color: gray;
         border-radius: 5px;
+        margin-bottom: 20px;
     } 
+  .or{
+        display: flex;
+        color: blue;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        margin-top: 20px;
+    }
+    .or::before,
+    .or::after{
+        flex: 1;
+        background-color: aliceblue;
+        height: 1px;
+        content: "";
+        margin: 0 12px;  
+    }
+ .bar2{
+        display: flex;
+        background-color: gray;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 250px;
+        border-radius: 15px;
+        margin: 10px auto;         
+    }
+.card2{
+        background-color: white;
+        width: 450px;
+        padding: 25px;
+        border-radius: 15px;
+    }
 </style>
-<h1 class="signIn">Sign In</h1>
-<p>Fill in the appropriate info sign in to your account on FocusBox</p>
-<h3>Email Address</h3>
-<input class="bar" type="email">
-<h3>Password</h3>
-<input class="bar" type="password">
+</head>
+<body> 
+    <div class="card1">
+        <h1 class="signIn">Sign In</h1>
+        <p>Fill in the appropriate info sign in to your account on FocusBox</p>
+        <h3>Email Address</h3>
+        <input class="bar" type="email">
+        <h3>Password</h3>
+        <input class="bar" type="password">
+        <div class="or">OR</div>
+        <div class="bar2">Continue with Google</div>
+        <div class="bar2">Continue with Facebook</div>
+        <p>Don't have an account? <a href="*">Sign Up</a></p>
+    </div>
 
-    </body>
+    
+    <div class="card2">
+        <!-- Khali card -->
+    </div>
+
+</body>
 </html>
