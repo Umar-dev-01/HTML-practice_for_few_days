@@ -1,49 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
- 
-    <title>Document</title>
-       <style>
-        .card{
-            background-color:rgb(32, 32, 32); 
-            width: 1270px;
-            height: 525px; 
+    <title>Sign Up page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            height: 100vh;
             display: flex;
-            align-items: center;  
-           font-family: sans-serif;
+            justify-content: center;
+            align-items: center;
+            background: #000;
         }
-        .lmbaCard{
-            background-color: black;
-            width: 200px;
-            height: 485px;
-            margin-left: 20px;
-            border-radius: 20px;
-            margin-top: 20px;
-            margin-bottom: 40px;
-            color: white;  
+
+        .main{
+            width: 900px;
+            height: 520px;
+            display: flex;
+            border-radius: 15px;
         }
-        .forColor{
-            background-color: white;
+
+        .left{
+            width: 45%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left img{
+            width:75%;
+        }
+
+        .right{
+            width: 55%;
+            background: #111;
+            color: white;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .back{
+            color: #3b5cff;
+            font-size: 14px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        h1{
+            color: #3b5cff;
+            margin-bottom: 8px;
+        }
+
+        p{
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .row{
+            display: flex;
+            gap: 10px;
+        }
+
+        label{
+            font-size: 12px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+            width: 100%;
+            height: 36px;
+            margin: 4px 0 10px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+        }
+
+        .checkbox{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            margin: 10px 0 15px;
+        }
+
+        .line{
+            width: 100%;
+            height: 2px;
+            background: #3b5cff;
+            margin-bottom: 10px;
+        }
+
+        .signup{
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 25px;
+            background: #3b5cff;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .or{
+            display: flex;
+            align-items: center;
+            margin: 18px 0;
+            font-size: 12px;
+            color: #3b5cff;
+        }
+
+        .or::before,
+        .or::after{
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #555;
+        }
+
+        .social-btn{
+            width: 100%;
+            height: 42px;
+            border-radius: 25px;
+            border: 1px solid #666;
+            background: #222;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            cursor: pointer;
+        }
+
+        .social-btn img{
             width: 20px;
-            height: 20px;
         }
-       </style>
+
+        .bottom{
+            text-align: center;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        .bottom a{
+            color: #3b5cff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-   <div class="card">
-<div class="lmbaCard"><div class="forColor"></div><bold>FocusBox</bold>
-</div>
+    <div class="main">
+        <div class="left">
+            <img src="cartoon.png" alt="Image">
+        </div>
+        <div class="right">
+            <div class="back">← Back</div>
+            <h1>Sign Up</h1>
+            <p>Create your FocusBox account</p>
 
+            <div class="row">
+                <div style="flex:1;">
+                    <label>First Name</label>
+                    <input type="text">
+                </div>
+                <div style="flex:1;">
+                    <label>Last Name</label>
+                    <input type="text">
+                </div>
+            </div>
 
+            <label>Email</label>
+            <input type="email">
 
+            <label>Password</label>
+            <input type="password">
 
+            <label>Confirm Password</label>
+            <input type="password">
 
+            <div class="checkbox">
+                <input type="checkbox" id="agree">
+                <label for="agree">I agree to terms & policy</label>
+            </div>
 
+            <div class="or">
+                <span>OR</span>
+            </div>
 
+            <button class="social-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"><a href="https://support.google.com/mail/answer/56256?hl=en"> Continue with Google</a>
+            </button>
+            <button class="social-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"><a href="https://www.facebook.com/login/"> Continue with Facebook</a>
+            </button>
 
-
-
-
-   </div> 
+            <div class="bottom">
+                Already have an account? <a href="#">Sign In</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
