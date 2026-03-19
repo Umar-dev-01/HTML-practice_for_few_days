@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Two Cards</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+  display: flex; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.card1{
+  background-color: #111;
+  padding: 40px;
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signIn{
+  color: #3353FF;
+  margin-top: 20px;
+}
+
+.back{
+  color: #3b5cff;
+  font-size: 14px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;  
+  color: #3353FF;
+}
+
+.bar{
+  color: white;
+  height: 35px;
+  width: 100%;
+  background-color: #535353;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  border: none;
+  padding-left: 10px;
+}
+
+.or{
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.or::before,
+.or::after{
+  flex: 1;
+  background-color: gray;
+  height: 1px;
+  content: "";
+  margin: 0 10px;  
+}
+
+.bar2{ 
+  width: 100%;
+  height: 40px;
+  border-radius: 25px;
+  border: 1px solid #666;
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.lineSing{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.card2{
+  background-color: white;
+  width: 50%;
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h3, p {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media (max-width:768px){
+
+  body{
+    flex-direction: column; 
+  }
+
+  .card1,
+  .card2{
+    width: 100%;
+  }
+
+  .card1{
+    padding: 20px;
+  }}
+
+</style>
+</head>
+
+<body> 
+   
+<div class="card1">
+
+  <div class="back"><a href="#">← Back</a></div>
+
+  <h1 class="signIn">Sign In</h1>
+  <p>Fill in the appropriate info to sign in to your account</p>
+
+  <h3>Email Address</h3>
+  <input class="bar" type="email">
+
+  <h3>Password</h3>
+  <input class="bar" type="password">
+
+  <div class="or">OR</div>
+        
+  <div class="bar2">
+    <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" width="20">Continue with Google
+  </div>
+
+  <div class="bar2">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="20">Continue with Facebook
+  </div>
+
+  <div class="lineSing">
+    <p>Don't have an account? <a href="https://singnup">Sign Up</a></p>
+  </div> 
+
+</div>
+
+<div class="card2">
+  <img src="cartoon.png">
+</div>
+
+</body>
+</html>
