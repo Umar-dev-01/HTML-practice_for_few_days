@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign Up page</title>
+    <title>Sign Up Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         *{
             margin: 0;
@@ -10,36 +11,22 @@
             font-family: Arial, sans-serif;
         }
 
-       body{
-    height: auto;
-    display: flex;
-    background: #000;
-}
-
-       .main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-
-        .left{
-            width: 45%;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-             width: 50%;
+        body{
+            background: #000;
+            overflow-x: hidden; /* prevents horizontal scrolling */
         }
 
-        .left img{
-            width:55%;
+        .main{
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
         }
 
         .right{
-            width: 55%;
+            width: 50%;
             background: #111;
             color: white;
-            padding: 30px;
+            padding: 40px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -48,13 +35,13 @@
         .back{
             color: #3b5cff;
             font-size: 14px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             cursor: pointer;
         }
 
         h1{
             color: #3b5cff;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         p{
@@ -65,6 +52,7 @@
         .row{
             display: flex;
             gap: 10px;
+            margin-bottom: 10px;
         }
 
         label{
@@ -76,12 +64,12 @@
         input[type="password"]{
             width: 100%;
             height: 36px;
-            margin: 4px 0 10px;
             padding: 8px;
             border: none;
             border-radius: 5px;
             background: #333;
             color: white;
+            margin-top: 4px;
         }
 
         .checkbox{
@@ -92,39 +80,22 @@
             margin: 10px 0 15px;
         }
 
-        .line{
-            width: 100%;
-            height: 2px;
-            background: #3b5cff;
-            margin-bottom: 10px;
-        }
-
-        .signup{
-            width: 100%;
-            height: 40px;
-            border: none;
-            border-radius: 25px;
-            background: #3b5cff;
-            color: white;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
         .or{
             display: flex;
             align-items: center;
-            margin: 18px 0;
-            font-size: 12px;
+            justify-content: center;
             color: #3b5cff;
+            margin: 15px 0;
+            font-size: 12px;
         }
 
         .or::before,
         .or::after{
+            content: "";
             flex: 1;
-        background-color: aliceblue;
-        height: 1px;
-        content: "";
-        margin: 0 12px; 
+            height: 1px;
+            background-color: #3b5cff;
+            margin: 0 10px;
         }
 
         .social-btn{
@@ -140,56 +111,62 @@
             gap: 10px;
             margin-bottom: 12px;
             cursor: pointer;
+            text-decoration: none;
         }
 
         .social-btn img{
             width: 20px;
         }
-        bottom{
+
+        .bottom{
             text-align: center;
             font-size: 12px;
-            margin-top: 8px;
+            margin-top: 10px;
         }
-.bottom a{
+
+        .bottom a{
             color: #3b5cff;
             text-decoration: none;
         }
-        a{
-          color: #f4f4f4;  
-     text-decoration: none;
+
+        .left{
+            width: 50%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
+        .left img{
+            max-width: 80%;
+            height: auto;
+        }
 
-
-@media (max-width:768px){
-
-  .main{
-    flex-direction: column;
-  }
-  .left,
-  .right{
-    width: 100%;
-  }
-  .left{
-    padding: 20px;
-  }
-  .left img{
-    width: 70%;
-  }
-  .right{
-    padding: 20px;
-  }
-.row{
-    flex-direction: column;
-  }}
-
+        /* Mobile Responsive */
+        @media (max-width: 768px){
+            .main{
+                flex-direction: column;
+            }
+            .right, .left{
+                width: 100%;
+                padding: 20px;
+            }
+            .row{
+                flex-direction: column;
+                gap: 5px;
+            }
+            .left img{
+                margin-top: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="main">
-        <div class="left">
-            <img src="cartoon.png" alt="Image">
-        </div>
+        <!-- Form on top -->
         <div class="right">
             <div class="back">← Back</div>
             <h1>Sign Up</h1>
@@ -225,12 +202,21 @@
             </div>
 
             <a href="https://support.google.com/mail/answer/56256?hl=en" class="social-btn">
-    <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png">Continue with Google</a>
+                <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png">Continue with Google
+            </a>
 
-           <a href="https://www.facebook.com/login/" class="social-btn">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">Continue with Facebook</a>
-           
-    <div class="bottom"> Already have an account? <a href="#*&">Sign In</a></div>
+            <a href="https://www.facebook.com/login/" class="social-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">Continue with Facebook
+            </a>
+
+            <div class="bottom">
+                Already have an account? <a href="#">Sign In</a>
+            </div>
+        </div>
+
+        <!-- Image below form -->
+        <div class="left">
+            <img src="cartoon.png" alt="Sign Up Image">
         </div>
     </div>
 </body>
