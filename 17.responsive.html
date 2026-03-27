@@ -11,7 +11,7 @@
         }
 
        body{
-    height: 100vh;
+    height: auto;
     display: flex;
     background: #000;
 }
@@ -161,31 +161,27 @@
 
 
 
-        @media (max-width:768px){
+@media (max-width:768px){
 
-    body{
-        height: auto;
-    }
-.main{
+  .main{
     flex-direction: column;
-    }
-.left,
-.right{
-        width: 100%;
-    }
-.left{
-        padding: 20px;
-    }
-.left img{
-        width: 80%;
-    }
-    .right{
-        padding: 20px;
-    }
-    .row{
-        flex-direction: column;
-        gap: 0;
-    }}
+  }
+  .left,
+  .right{
+    width: 100%;
+  }
+  .left{
+    padding: 20px;
+  }
+  .left img{
+    width: 70%;
+  }
+  .right{
+    padding: 20px;
+  }
+.row{
+    flex-direction: column;
+  }}
 
     </style>
 </head>
