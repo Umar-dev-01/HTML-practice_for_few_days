@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed Layout</title>
+   
+    <style>
+*{
+ margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+background:#ddd;
+font-family: Arial;
+    }
+.top{
+  background:#bbb;
+ padding:15px;
+display:flex;
+ justify-content:space-between;
+        }
+ .black{
+ background:#000;
+        }
+ .small{
+    width:60px;
+    height:25px;
+        }
+ .round{
+     width:120px;
+     height:30px;
+     border-radius:20px;
+        }
+        .center{
+    text-align:center;
+    padding:25px 15px;
+        }
+.gray{
+     background:#bbb;
+ width:70%;
+ height:35px;
+ margin:10px auto;
+}
+.btn{
+ width:90px;
+ height:28px;
+ border-radius:20px;
+ margin:12px auto;
+}
+.cards{
+display:flex;
+ gap:10px;
+ padding:15px;
+    }
+
+.left-card{
+ background:#bbb;
+ height:120px;
+ width:35%;
+}
+.right-card{
+background:#bbb;
+ height:120px;
+ width:65%;
+    }
+ .bottom{
+    background:#bbb;
+    display:flex;
+    padding:15px;
+gap:10px;
+    }
+.left-box{
+ width:100px;
+height:100px;
+}
+ .right{
+flex:1;
+ display:flex;
+justify-content:space-between;
+        }
+.col{
+ display:flex;
+flex-direction:column;
+gap:6px; 
+        }
+.line{
+width:70px;
+ height:12px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="top">
+<div class="black small"></div>
+<div class="black round"></div>
+</div>
+<div class="center">
+<div class="gray"></div>
+<div class="gray"></div>
+<div class="black btn"></div>
+</div>
+
+<div class="cards">
+<div class="left-card"></div>
+<div class="right-card"></div>
+</div>
+
+<div class="bottom">
+<div class="black left-box"></div>
+
+<div class="right">
+<div class="col">
+<div class="black line"></div>
+<div class="black line"></div>
+<div class="black line"></div>
+<div class="black line"></div>
+</div>
+
+<div class="col">
+<div class="black line"></div>
+<div class="black line"></div>
+<div class="black line"></div>
+<div class="black line"></div>
+</div>
+
+<div class="col">
+<div class="black line"></div>
+<div class="black line"></div>
+<div class="black line"></div>
+<div class="black line"></div>
+<div class="black line"></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
