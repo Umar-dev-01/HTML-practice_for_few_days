@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Layout</title>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body{
@@ -10,12 +10,12 @@
       font-family: Arial;
       background: #eee;
     }
-  .container{
+.container{
       max-width: 1100px;
       margin: auto;
       padding: 15px;
     }
-    .top-bar{
+.top-bar{
       background: #ccc;
       padding: 12px;
       border-radius: 8px;
@@ -26,13 +26,13 @@
       justify-content: space-between;
       align-items: center;
     }
-.left-rect{
+ .left-rect{
       width: 60px;
       height: 25px;
       background: black;
       border-radius: 4px;
     }
-.right-pill{
+ .right-pill{
       width: 150px;
       height: 25px;
       background: black;
@@ -44,20 +44,20 @@
       margin: 10px 0;
       border-radius: 6px;
     }
-.center-btn{
+ .center-btn{
       width: 160px;
       height: 28px;
       margin: 15px auto;
       background: black;
       border-radius: 20px;
     }
-.two-cards{
+ .two-cards{
       display: flex;
       gap: 15px;
       margin: 15px 0;
       flex-wrap: wrap;
     }
-.card{
+ .card{
       flex: 1;
       min-width: 250px;
       height: 110px;
@@ -89,30 +89,30 @@
       background: black;
       border-radius: 5px;
     }
- .big-box{
+.big-box{
       height: 130px;
       background: black;
       border-radius: 20px;
       margin: 20px 0;
     }
- .bottom{
+.bottom{
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
     }
- .left-box{
+.left-box{
       width: 100px;
       height: 130px;
       background: black;
       border-radius: 8px;
     }
- .right{
+.right{
       flex: 1;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 8px;
     }
- .line{
+.line{
       height: 22px;
       background: black;
       border-radius: 4px;
@@ -123,28 +123,29 @@
 
 
     @media (max-width: 768px) {
-  .inner-bar{
+      .inner-bar{
 flex-direction: column;
-   gap: 10px;
-      }
-.right-pill{
-  width: 100%;
+ gap: 10px;
   }
+ .right-pill{
+        width: 100%;
+}
 .two-cards{
-  flex-direction: column;
-   }
+        flex-direction: column;
+}
 .three-cards{
-  flex-direction: column;
-  }
+   flex-direction: column;
+}
+
 .bottom{
 flex-direction: column;
 }
-.left-box{
- width: 100%;
-      }
+ .left-box{
+width: 100%;
+}
 .right{
-grid-template-columns: repeat(2, 1fr);
-}}
+   grid-template-columns: repeat(2, 1fr);
+ }}
 
   </style>
 </head>
@@ -155,7 +156,7 @@ grid-template-columns: repeat(2, 1fr);
 
   <div class="top-bar">
     <div class="inner-bar">
-<div class="left-rect"></div>
+     <div class="left-rect"></div>
  <div class="right-pill"></div>
     </div>
   </div>
@@ -172,18 +173,18 @@ grid-template-columns: repeat(2, 1fr);
 
   <div class="three-cards">
     <div class="small-card">
-  <div class="circle"></div>
-  <div class="rect-box"></div>
+      <div class="circle"></div>
+      <div class="rect-box"></div>
     </div>
 
     <div class="small-card">
-  <div class="circle"></div>
-  <div class="rect-box"></div>
-  </div>
+      <div class="circle"></div>
+      <div class="rect-box"></div>
+    </div>
 
     <div class="small-card">
-    <div class="circle"></div>
-  <div class="rect-box"></div>
+      <div class="circle"></div>
+      <div class="rect-box"></div>
     </div>
   </div>
 
@@ -207,9 +208,9 @@ grid-template-columns: repeat(2, 1fr);
 
       <div class="line single"></div>
     </div>
-        </div>
+  </div>
 
-          </div>
+</div>
 
 </body>
 </html>
