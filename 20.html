@@ -1,151 +1,191 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Layout</title>
+  <title>Final Layout</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+
     body{
       margin: 0;
       font-family: Arial;
       background: #eee;
     }
-.container{
+    .container{
       max-width: 1100px;
       margin: auto;
       padding: 15px;
     }
-.top-bar{
+.navbar{
       background: #ccc;
-      padding: 12px;
+      padding: 32px 40px;
       border-radius: 8px;
-      margin-bottom: 15px;
+      margin-bottom: 32px;
     }
-.inner-bar{
+    .nav-inner{
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
- .left-rect{
-      width: 60px;
-      height: 25px;
+    .logo{
+      width: 161px;
+      height: 68px;
       background: black;
-      border-radius: 4px;
     }
- .right-pill{
-      width: 150px;
-      height: 25px;
+    .nav-btn{
+      width: 269px;
+      height: 68px;
       background: black;
-      border-radius: 50px;
+      border-radius: 999px;
     }
-.grey{
+    .section{
       background: #ccc;
-      height: 40px;
-      margin: 10px 0;
       border-radius: 6px;
+      height: 144px;
+      margin-bottom: 20px;
     }
- .center-btn{
-      width: 160px;
-      height: 28px;
-      margin: 15px auto;
+    .center-btn{
+      width: 269px;
+      height: 68px;
+      margin: 30px auto;
       background: black;
-      border-radius: 20px;
+      border-radius: 999px;
     }
  .two-cards{
       display: flex;
-      gap: 15px;
-      margin: 15px 0;
-      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
     }
- .card{
+  .card{
       flex: 1;
-      min-width: 250px;
-      height: 110px;
+      height: 340px;
       background: #ccc;
-      border-radius: 15px;
+      border-radius: 55px;
     }
-.three-cards{
+ .three-cards{
       display: flex;
-      gap: 15px;
-      margin-bottom: 15px;
-      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
     }
-.small-card{
+ .small-card{
       flex: 1;
-      min-width: 220px;
       background: #ccc;
-      border-radius: 12px;
-      padding: 12px;
+      border-radius: 24px;
+      padding: 20px;
     }
 .circle{
-      width: 30px;
-      height: 30px;
+      width: 123px;
+      height: 123px;
       background: black;
       border-radius: 50%;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 .rect-box{
-      height: 40px;
+      height: 171px;
       background: black;
-      border-radius: 5px;
+      border-radius: 10px;
     }
-.big-box{
-      height: 130px;
+ .big-box{
+      height: 400px;
       background: black;
-      border-radius: 20px;
-      margin: 20px 0;
+      border-radius: 66px;
+      margin-bottom: 30px;
     }
 .bottom{
       display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
+      gap: 20px;
     }
-.left-box{
-      width: 100px;
-      height: 130px;
+ .left-box{
+      width: 30%;
+      height: 340px;
       background: black;
-      border-radius: 8px;
+      border-radius: 10px;
     }
-.right{
+ .right{
       flex: 1;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
+      gap: 10px;
     }
-.line{
-      height: 22px;
+ .line{
+      height: 58px;
       background: black;
       border-radius: 4px;
     }
-.single{
-      grid-column: span 1;
-    }
 
-
-    @media (max-width: 768px) {
-      .inner-bar{
-flex-direction: column;
- gap: 10px;
-  }
- .right-pill{
-        width: 100%;
-}
-.two-cards{
+    @media (max-width: 900px){
+.container{
+        max-width: 800px;
+      }
+ .nav-inner{
+        flex-direction: row;
+        align-items: flex-start;
+      }
+ .two-cards{
         flex-direction: column;
-}
-.three-cards{
-   flex-direction: column;
-}
-
-.bottom{
-flex-direction: column;
-}
+      }
+ .three-cards{
+        flex-direction: column;
+      }
+ .small-card{
+        width: 100%;
+      }
+ .bottom{
+        flex-direction: column;
+      }
  .left-box{
-width: 100%;
-}
+        width: 100%;
+      }
 .right{
-   grid-template-columns: repeat(2, 1fr);
- }}
+        grid-template-columns: repeat(2, 1fr);
+      }}
+
+    
+    @media (max-width: 436px){
+
+      .container{
+        padding: 10px;
+      }
+.nav-inner{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+.logo{
+        width: 120px;
+        height: 50px;
+      }
+ .nav-btn{
+        width: 100%;
+        height: 50px;
+      }
+.center-btn{
+        width: 100%;
+        height: 50px;
+      }
+.card{
+        height: 250px;
+      }
+ .small-card{
+        padding: 15px;
+      }
+.circle{
+        width: 90px;
+        height: 90px;
+      }
+.rect-box{
+        height: 120px;
+      }
+ .big-box{
+        height: 250px;
+        border-radius: 30px;
+      }
+.right{
+        grid-template-columns: 1fr;
+      }
+ .line{
+        height: 40px;
+      }}
 
   </style>
 </head>
@@ -154,15 +194,15 @@ width: 100%;
 
 <div class="container">
 
-  <div class="top-bar">
-    <div class="inner-bar">
-     <div class="left-rect"></div>
- <div class="right-pill"></div>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo"></div>
+      <div class="nav-btn"></div>
     </div>
-  </div>
+  </nav>
 
-  <div class="grey"></div>
-  <div class="grey"></div>
+  <div class="section"></div>
+  <div class="section"></div>
 
   <div class="center-btn"></div>
 
@@ -206,7 +246,7 @@ width: 100%;
       <div class="line"></div>
       <div class="line"></div>
 
-      <div class="line single"></div>
+      <div class="line"></div>
     </div>
   </div>
 
