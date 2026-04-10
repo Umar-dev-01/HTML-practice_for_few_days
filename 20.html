@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout</title>
+  
+
+  <style>
+    body{
+      margin: 0;
+      font-family: Arial;
+      background: #eee;
+    }
+  .container{
+      max-width: 1100px;
+      margin: auto;
+      padding: 15px;
+    }
+    .top-bar{
+      background: #ccc;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+.inner-bar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+.left-rect{
+      width: 60px;
+      height: 25px;
+      background: black;
+      border-radius: 4px;
+    }
+.right-pill{
+      width: 150px;
+      height: 25px;
+      background: black;
+      border-radius: 50px;
+    }
+.grey{
+      background: #ccc;
+      height: 40px;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+.center-btn{
+      width: 160px;
+      height: 28px;
+      margin: 15px auto;
+      background: black;
+      border-radius: 20px;
+    }
+.two-cards{
+      display: flex;
+      gap: 15px;
+      margin: 15px 0;
+      flex-wrap: wrap;
+    }
+.card{
+      flex: 1;
+      min-width: 250px;
+      height: 110px;
+      background: #ccc;
+      border-radius: 15px;
+    }
+.three-cards{
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+.small-card{
+      flex: 1;
+      min-width: 220px;
+      background: #ccc;
+      border-radius: 12px;
+      padding: 12px;
+    }
+.circle{
+      width: 30px;
+      height: 30px;
+      background: black;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+.rect-box{
+      height: 40px;
+      background: black;
+      border-radius: 5px;
+    }
+ .big-box{
+      height: 130px;
+      background: black;
+      border-radius: 20px;
+      margin: 20px 0;
+    }
+ .bottom{
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+ .left-box{
+      width: 100px;
+      height: 130px;
+      background: black;
+      border-radius: 8px;
+    }
+ .right{
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+ .line{
+      height: 22px;
+      background: black;
+      border-radius: 4px;
+    }
+.single{
+      grid-column: span 1;
+    }
+
+
+    @media (max-width: 768px) {
+  .inner-bar{
+flex-direction: column;
+   gap: 10px;
+      }
+.right-pill{
+  width: 100%;
+  }
+.two-cards{
+  flex-direction: column;
+   }
+.three-cards{
+  flex-direction: column;
+  }
+.bottom{
+flex-direction: column;
+}
+.left-box{
+ width: 100%;
+      }
+.right{
+grid-template-columns: repeat(2, 1fr);
+}}
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="top-bar">
+    <div class="inner-bar">
+<div class="left-rect"></div>
+ <div class="right-pill"></div>
+    </div>
+  </div>
+
+  <div class="grey"></div>
+  <div class="grey"></div>
+
+  <div class="center-btn"></div>
+
+  <div class="two-cards">
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+
+  <div class="three-cards">
+    <div class="small-card">
+  <div class="circle"></div>
+  <div class="rect-box"></div>
+    </div>
+
+    <div class="small-card">
+  <div class="circle"></div>
+  <div class="rect-box"></div>
+  </div>
+
+    <div class="small-card">
+    <div class="circle"></div>
+  <div class="rect-box"></div>
+    </div>
+  </div>
+
+  <div class="big-box"></div>
+
+  <div class="bottom">
+    <div class="left-box"></div>
+
+    <div class="right">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+
+      <div class="line single"></div>
+    </div>
+        </div>
+
+          </div>
+
+</body>
+</html>
