@@ -7,11 +7,18 @@
                 font-family: arial;
 
             }
+            .brra{
+                width: 1440px;
+                height: 2683px;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                background-color: #fff;
+            }
 .nav-bar{
    display: flex;
    background-color: #d9d9d9;
-   padding: 15px;
-   margin: 32px 40px 32px 40px;
+   padding: 32px 40px 32px 40px;
    width: 1440px;
    height: 132px;
    justify-content: space-between;
@@ -48,6 +55,8 @@ border-radius: 999px;
     padding: 32px;
     gap: 25px;
     display: flex;
+    width: 1440px;
+    height: 404px;
 }.box, .box2{
     height:340px ;
     width:675.5px ;
@@ -137,9 +146,45 @@ display: flex;
 gap: 22px;
 flex-direction: column;
 }
+@media(max-width: 800px){
+     .brra{
+                width: 800px;
+                height: 2683px;
+                gap: 32px;
+                background-color: #fff;
+            }
+            .nav-bar{
+   display: flex;
+   background-color: #d9d9d9;
+   padding: 32px 40px;
+   width: 800px;
+   height: 132px;
+   justify-content: space-between;
+   align-items: center;
+}
+.hero{
+    display: flex;
+    padding: 64px 32px;
+    flex-direction: column;
+    gap: 10px;
+    width: 800px;
+    height: 548px;
+}.bars{
+    width: 736px;
+    height:144px ;
+    background-color: #d9d9d9;
+} .boxs-aba{
+    padding: 32px;
+    gap: 25px;
+    display: flex;
+    width: 800px;
+    height: 404px;
+}
+}
 </style>
   </head>
         <body>
+            <div class="brra">
             <div class="nav-bar">
                 <div class="rect"></div>
                 <div class="circle"></div>
@@ -189,5 +234,6 @@ flex-direction: column;
      <div class="debian"></div>
       <div class="debian"></div>
 </div></div>
+</div>
         </body>
 </html>
