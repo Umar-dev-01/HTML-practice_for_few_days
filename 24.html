@@ -7,20 +7,22 @@
     max-width: 1178px;
     width: 100%;
     height: 64px;
-    border-bottom: 0.8px;
+border-bottom: 0.8px solid #ccc;
     align-items: center;
     padding-right: 32px;
     padding-left: 32px;
-    background-color: #FFFFFFCC.80%;
-    flex-direction: column;
+    background-color: #FFFFFFCC;
+    flex-direction: row;
+    justify-content: space-between;
     display: flex;
-}.contianer{
+}.container {
     display: flex;
 flex-direction: row;
 max-width: 1114px;
 width: 100%;
 height: 64px;
 justify-content: space-between;
+  align-items: center; 
     }.nav-bar-compact{
         display: flex;
 flex-direction: row;
@@ -28,6 +30,8 @@ width: 178.3062px;
 height: 60.1658px;
 padding: 8px 3px;
 gap: 4px;
+ align-items: center;
+
     }.ps-logo{
         width: 63.3265px;
         height: 44.1658px;
@@ -59,6 +63,63 @@ line-height: 100%;
 letter-spacing: 0%;
 align-items: center;
 color: #333333;
+    }
+
+    .container2{
+        width: 400.1875px;
+        height: 36px;
+        gap: 32px;
+        display: flex;
+        flex-direction: row;
+         align-items: center;
+       
+    }.t-services{
+width: 67px;
+height: 24px;
+font-family: Poppins;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0px;
+color: #4A5565;
+    }.t-why-us{
+        width: 59px;
+        height:24px ;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #4A5565;
+    }.t-contact{
+        width:66px ;
+        height: 24px;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #4A5565;
+    }.button{
+        display: flex;
+        flex-direction: row;
+        width: 112.1875px;
+        height: 36px;
+        border-radius: 8px;
+        padding: 8px 16px;
+        gap: 8px;
+        background-color: #0072BD;
+         align-items: center;
+    }
+    .t-get-started{
+        width: 81px;
+        height: 20px;
+        font-weight: 500;
+        font-family: Poppins;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        color: #FFFFFF;
     }
 
         </style>
@@ -97,7 +158,15 @@ color: #333333;
     <div class="sub-text2">Solutions that will smile back at you</div>
 </div>
         </div>
-    </div>
+  
+
+    <div class="container2">
+            <div class="t-services">Services</div>
+                <div class="t-why-us">Why Us</div>
+                <div class="t-contact">Contact</div>
+                <div class="button">
+                    <div class="t-get-started">Get Started</div>
+                </div>
 </div>
     </div>
 </body>
