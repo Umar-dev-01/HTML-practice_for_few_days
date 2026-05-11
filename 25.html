@@ -72,9 +72,13 @@
             cursor: pointer;
         }
        
-section{
-    font-family: poppins ;
+.section{
+   font-family: poppins ;
     padding: 64px 32px;
+}.section-abu{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-stats{
@@ -87,6 +91,7 @@ section{
    display: flex;
    flex-direction: column;
    gap: 4px;
+   
 }
 .headings-color{
     color: #0072BD;
@@ -96,13 +101,19 @@ section{
     border-radius: 999px;
     padding: 8px 16px;
     gap: 8px;
+    border: solid #E5E7EB;
+    background-color: #FFFFFF;
+    align-items: center;
+    width: 300px;
+    height: 36px;
 }
 .big-headings{
 font-weight: 700;
 font-style: bold;
-font-size: 45px;
+font-size: 35px;
 line-height: 90px;
 letter-spacing: 0px;
+margin: 0;
 }
 .buttons{
     display: flex;
@@ -110,6 +121,9 @@ letter-spacing: 0px;
     align-items: center;
     padding: 12px 16px;
     border-radius: 8px;
+    color: #364153;
+    font-weight: 500;
+    cursor: pointer;
 }
 
     </style>
@@ -143,7 +157,9 @@ letter-spacing: 0px;
 
 
 
-<section>
+<section class="section">
+    <div class="section-abu">
+        <div class="left-content">
     <div class="flam">
         <img src="sparkle.png" alt="Flam image">
         <p>Trusted by 500+ companies</p>
@@ -158,12 +174,12 @@ letter-spacing: 0px;
         execution, we're your partner in digital success.</p>
 
         <div class="buttons">
-        <button style="background-color: #0072BD;">Start Your Project
-<img src="arrowicon.png" alt="arrow icon"></button>
+       <img src="Button.png">
         <img src="play.png" alt="play button">
         <p>Watch Demo</p>
 </div>
 
+<hr>
 <div class="main-stats">
         <div class="stats">
             <h4 class="headings-color">500+</h4>
@@ -180,8 +196,9 @@ letter-spacing: 0px;
             <h4 class="headings-color">50+</h4>
             <p>Team Members</p>
             </div>
+        </div></div>
+     <img style="height: 600px; width: 460px; border-radius: 16px;" src="newangrez.png" alt="angrez">
         </div>
-        <img src="newangrez.png" alt="angrez">
 </section>
 </body>
 </html>
