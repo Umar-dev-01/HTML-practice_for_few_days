@@ -71,14 +71,54 @@
             font-size: 14px;
             cursor: pointer;
         }
+       
+section{
+    font-family: poppins ;
+    padding: 64px 32px;
+}
+
+.main-stats{
+ display: flex;
+    gap:32px ;
+    padding: 24px 0px 24px 0px;
+    flex-direction: row;
+}
+.stats{
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+.headings-color{
+    color: #0072BD;
+}
+.flam{
+    display: flex;
+    border-radius: 999px;
+    padding: 8px 16px;
+    gap: 8px;
+}
+.big-headings{
+font-weight: 700;
+font-style: bold;
+font-size: 45px;
+line-height: 90px;
+letter-spacing: 0px;
+}
+.buttons{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+}
 
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="nav-bar">
-
     <div class="container">
 
         <div class="nav-bar-compact">
@@ -92,17 +132,56 @@
 
         </div>
 
-       
         <div class="container2">
             <div class="nav-link">Services</div>
             <div class="nav-link">Why Us</div>
             <div class="nav-link">Contact</div>
             <div class="button">Get Started</div>
         </div>
-
     </div>
-
 </div>
 
+
+
+<section>
+    <div class="flam">
+        <img src="sparkle.png" alt="Flam image">
+        <p>Trusted by 500+ companies</p>
+    </div>
+
+    <div class="big-headings">
+    <h1 style="color: #101828;">Elevate Your</h1>
+    <h1 style="color: #0072BD;">Digital Presence</h1>
+</div>
+
+    <p>We craft exceptional digital experiences that drive growth and transform businesses. From strategy to 
+        execution, we're your partner in digital success.</p>
+
+        <div class="buttons">
+        <button style="background-color: #0072BD;">Start Your Project
+<img src="arrowicon.png" alt="arrow icon"></button>
+        <img src="play.png" alt="play button">
+        <p>Watch Demo</p>
+</div>
+
+<div class="main-stats">
+        <div class="stats">
+            <h4 class="headings-color">500+</h4>
+            <p>Projects Done</p>
+        </div>
+
+       
+        <div class="stats">
+            <h4 class="headings-color">98%</h4>
+            <p>Client Satisfaction</p>
+            </div>
+
+        <div class="stats">
+            <h4 class="headings-color">50+</h4>
+            <p>Team Members</p>
+            </div>
+        </div>
+        <img src="newangrez.png" alt="angrez">
+</section>
 </body>
 </html>
