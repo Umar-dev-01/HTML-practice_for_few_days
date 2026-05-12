@@ -132,7 +132,20 @@ margin: 0;
     flex-direction: column;
     padding-bottom: 0;
 }
-
+.card{
+    width: 539.6px;
+    height: 356.7875px;
+    padding: 32px 32px 0 32px;
+    background-color: #FFFFFF;
+    border: solid #E5E7EB;
+    border-radius: 1px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.cards-main{
+    display: flex;
+}
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -215,7 +228,8 @@ margin: 0;
 <p>Comprehensive digital solutions tailored to your unique needs</p>
 </div>
 
-<div class="card1">
+<div class="cards-main">
+<div class="card">
     <img src="html.png" alt="html">
     <h1>Web Development</h1>
     <p>Custom websites and web applications built with modern technologies and best practices.</p>
@@ -226,7 +240,7 @@ margin: 0;
     </ul>
 </div>
 
-<div class="">
+<div class="card">
     <img src="designing.png" alt="designing">
     <h1>UI/UX Design</h1>
 <p>Beautiful, intuitive interfaces that users love and that drive conversions.</p>
@@ -236,6 +250,29 @@ margin: 0;
     <li>Prototyping</li>
 </ul>
 </div>
+</div>
+<div class="cards-main">
+<div class="card">
+    <img src="marketing.png" alt="marketing-logo">
+    <h1>SEO & Marketing</h1>
+    <p>Strategic digital marketing that gets you found and drives qualified traffic.</p>
+    <ul>
+        <li>SEO Optimization</li>
+        <li>Content Strategy</li>
+        <li>Analytics</li>
+    </ul>
+</div>
 
+<div class="card">
+    <img src="mobile-dev.png" alt="mobile-develpment">
+    <h1>Mobile Apps</h1>
+    <p>Native and cross-platform mobile applications that engage your audience.</p>
+    <ul>
+        <li>iOS & Android</li>
+        <li>React Native</li>
+        <li>App Store Optimization</li>
+    </ul>
+</div>
+</div>
 </body>
 </html>
