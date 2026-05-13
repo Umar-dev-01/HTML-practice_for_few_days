@@ -81,6 +81,7 @@ display: flex;
     gap:32px ;
     padding: 24px 0px 24px 0px;
     flex-direction: row;
+    line-height: 1px;
 }
 .stats{
    display: flex;
@@ -96,11 +97,28 @@ display: flex;
     border-radius: 999px;
     padding: 8px 16px;
     gap: 8px;
-    border: solid #E5E7EB;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 1px 2px -1px #0000001A,
+ 0px 1px 3px 0px #0000001A;
     background-color: #FFFFFF;
     align-items: center;
-    width: 300px;
+    justify-content: center;
+    width: 250px;
     height: 36px;
+}
+.play-button{
+    background-color: #FFFFFF;
+    border:1px solid  #D1D5DC;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+padding: 12px 16px;
+border-radius: 8px;
+ font-weight: 500;
+ width: 170.5875px;
+ height: 30.6px;
+ align-items: center;
+ justify-content: center;
 }
 .big-headings{
 font-weight: 700;
@@ -109,22 +127,29 @@ font-size: 35px;
 line-height: 90px;
 letter-spacing: 0px;
 margin: 0;
+line-height: 50px;
 }
 .buttons{
     display: flex;
     gap: 16px;
     align-items: center;
-    padding: 12px 16px;
-    border-radius: 8px;
     color: #364153;
-    font-weight: 500;
     cursor: pointer;
+}
+.line{
+    border: none;
+    height: 1px;
+    background-color: #E5E7EB;
 }.our-services{
     gap: 24px;
     align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
+    line-height: 1px;
+     margin-top: 20px ;
+     margin-bottom: 70px;
 }
 .card{
     width: 539.6px;
@@ -141,6 +166,7 @@ margin: 0;
     display: flex;
   gap: 18px;
     padding: 18px 18px;
+   ;
 }
 
 .box{
@@ -176,6 +202,7 @@ display: flex;
 flex-direction: row;
 gap: 14px;
 }
+
 
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -226,11 +253,13 @@ gap: 14px;
 
         <div class="buttons">
        <img src="Button.png">
+<div class="play-button">
         <img src="play.png" alt="play button">
         <p>Watch Demo</p>
 </div>
+</div>
 
-<hr>
+<hr class="line">
 <div class="main-stats">
         <div class="stats">
             <h4 class="headings-color">500+</h4>
