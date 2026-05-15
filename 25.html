@@ -224,13 +224,10 @@ gap: 14px;
     gap: 32px;
     margin-top: 50px;
 }
-.last-card-dad{
+.services-section{
     display: flex;
     gap: 48px;
     border-top: 0.8px;
-    padding: 64.8px 32px 0 32px;
-    border:1px solid #364153;
-  
 }
 .last-card{
    align-items: start;
@@ -239,11 +236,31 @@ width: 242.6px;
 flex-direction: column;
 justify-content: flex-start;
 margin: 0;
+padding: 64.8px 32px 0 32px;
 }
 .for-logo-pic{
     display: flex;
     gap: 12px;
 }
+.logo-small-3{
+padding: 32px;
+display: flex;
+gap: 16px;
+cursor: pointer;
+}
+.last-bar-dad{
+    display: flex;
+justify-content: space-between ; padding: 0 32px;
+}
+.last-bar{
+display: flex;
+gap: 24px;
+align-items: center;
+}
+a{
+text-decoration: none;
+}
+
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -443,7 +460,7 @@ margin: 0;
 </div>
 </div>
 
-<div class="last-card-dad">
+<section class="services-section">
 <div class="last-card">
    <img src="logio.png" alt="logo">
    <p>Your partner in digital excellence. We create innovative solutions that drive business growth.</p>
@@ -478,18 +495,21 @@ margin: 0;
 <p>123 Business St, City, ST 12345</p>
 </div>
 </div>
-</div>
-<div class="#">
+</section>
+
+<div class="logo-small-3">
 <img src="twitwer.logo.png" alt="twitwer">
 <img src="linkdin-logo.png" alt="linkdine">
 <img src="gitHub-logo.png" alt="gitHub">
 </div>
 
+<footer class="last-bar-dad">   
+<small>© 2025 Agency. All rights reserved.</small>
 <div class="last-bar">
-<p>© 2025 Agency. All rights reserved.</p>
-<p>Privacy Policy</p>
-<p>Terms of Service</p>
-<p>Cookie Policy</p>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+<a href="#">Cookie Policy</a>
     </div>
+</footer>
 </body>
 </html>
