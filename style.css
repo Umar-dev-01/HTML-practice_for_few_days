@@ -6,7 +6,7 @@ body{
         .nav-bar{
             width: 100%;
             height: 64px;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
             display: flex;
             justify-content: center;
             background-color: #FFFFFFCC;
@@ -62,11 +62,11 @@ body{
 .section{
    font-family: poppins ;
     padding: 64px 32px;
+    padding: 20px;
 }.section-abu{
 display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .main-stats{
@@ -75,15 +75,17 @@ display: flex;
     padding: 24px 0px 24px 0px;
     flex-direction: row;
     line-height: 1px;
+    color: #4A5565;
 }
 .stats{
    display: flex;
    flex-direction: column;
-   gap: 4px;
+   margin: 0px;
    
 }
 .headings-color{
     color: #0072BD;
+   
 }
 .flam{
     display: flex;
@@ -108,7 +110,6 @@ display: flex;
 padding: 12px 16px;
 border-radius: 8px;
  font-weight: 500;
- width: 170.5875px;
  height: 30.6px;
  align-items: center;
  justify-content: center;
@@ -116,7 +117,7 @@ border-radius: 8px;
 .big-headings{
 font-weight: 700;
 font-style: bold;
-font-size: 35px;
+font-size: 42px;
 line-height: 90px;
 letter-spacing: 0px;
 margin: 0;
@@ -124,7 +125,7 @@ line-height: 50px;
 }
 .buttons{
     display: flex;
-    gap: 16px;
+    gap: 20px;
     align-items: center;
     color: #364153;
     cursor: pointer;
@@ -159,7 +160,6 @@ line-height: 50px;
     display: flex;
   gap: 18px;
     padding: 18px 18px;
-   ;
 }
 
 .box{
@@ -256,7 +256,8 @@ cursor: pointer;
 }
 .last-bar-dad{
     display: flex;
-justify-content: space-between ; padding: 0 32px;
+justify-content: space-between ; 
+padding: 0 32px;
 }
 .last-bar{
 display: flex;
