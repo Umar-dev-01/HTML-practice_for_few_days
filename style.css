@@ -1,6 +1,8 @@
 body{
             font-family: Poppins;
             margin: 0;
+            background-color: #FAFAFA;
+           
         }
 
         .nav-bar{
@@ -17,6 +19,7 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
+             padding: 0 32px 0px 32px;
         }
 
         .nav-bar-compact{
@@ -67,11 +70,12 @@ body{
 display: flex;
     justify-content: space-between;
     align-items: center;
+     padding: 0 32px 0px 32px;
 }
 
 .main-stats{
  display: flex;
-    gap:32px ;
+    gap:110px ;
     padding: 24px 0px 24px 0px;
     flex-direction: row;
     line-height: 1px;
@@ -100,6 +104,7 @@ display: flex;
     justify-content: center;
     width: 250px;
     height: 36px;
+    margin-top: 12px;
 }
 .play-button{
     background-color: #FFFFFF;
@@ -125,7 +130,7 @@ line-height: 50px;
 }
 .buttons{
     display: flex;
-    gap: 20px;
+    gap: 35px;
     align-items: center;
     color: #364153;
     cursor: pointer;
@@ -160,6 +165,7 @@ line-height: 50px;
     display: flex;
   gap: 18px;
     padding: 18px 18px;
+    margin-top: 0px;
 }
 
 .box{
@@ -258,6 +264,7 @@ cursor: pointer;
     display: flex;
 justify-content: space-between ; 
 padding: 0 32px;
+margin-bottom: 20px;
 }
 .last-bar{
 display: flex;
@@ -267,4 +274,13 @@ align-items: center;
 a{
 text-decoration: none;
 color: #364153;
+}
+.mono-logo{
+background-color: #0072BD;
+width: 80px;
+height: 80px;
+align-items: center;
+justify-content: center;
+display: flex;
+border-radius: 16px;
 }
