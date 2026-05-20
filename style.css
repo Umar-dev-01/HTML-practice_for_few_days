@@ -287,4 +287,16 @@ justify-content: center;
 display: flex;
 border-radius: 16px;
 }
-
+.space-but{
+    display: flex;
+justify-content: space-between;
+}
+.u-line{
+display: flex;
+flex-direction: column;
+}.u-line p{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 0;
+}
