@@ -87,6 +87,9 @@ display: flex;
    margin: 0px;
    
 }
+h4{
+    margin-bottom: 35px;
+}
 .headings-color{
     color: #0072BD;
    
@@ -180,9 +183,11 @@ margin-top: 50px;
     height: 356.7875px;
     padding: 32px 32px 0 32px;
     background-color: #FFFFFF;
+
 }
 .check-box{
     display: flex;
+        margin-bottom: 16px;
 }
 .small-cards{
     display: flex;
